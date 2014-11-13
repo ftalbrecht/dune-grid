@@ -619,7 +619,7 @@ namespace Dune {
       Dune::array<int,dim> s,
       std::bitset<dim> periodic,
       int overlap,
-      const YLoadBalance<dim>* lb = defaultLoadbalancer())
+      const YLoadBalance<dim>* /*lb*/ = defaultLoadbalancer())
     {
       _LL = L;
       _periodic = periodic;
@@ -947,27 +947,27 @@ namespace Dune {
     }
 
     //! return size (= distance in graph) of overlap region
-    int overlapSize (int level, int codim) const
+    int overlapSize (int level, int /*codim*/) const
     {
       YGridLevelIterator g = begin(level);
       return g->overlap;
     }
 
     //! return size (= distance in graph) of overlap region
-    int overlapSize (int codim) const
+    int overlapSize (int /*codim*/) const
     {
       YGridLevelIterator g = begin(maxLevel());
       return g->overlap;
     }
 
     //! return size (= distance in graph) of ghost region
-    int ghostSize (int level, int codim) const
+    int ghostSize (int /*level*/, int /*codim*/) const
     {
       return 0;
     }
 
     //! return size (= distance in graph) of ghost region
-    int ghostSize (int codim) const
+    int ghostSize (int /*codim*/) const
     {
       return 0;
     }

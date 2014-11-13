@@ -203,7 +203,7 @@ namespace Dune {
     }
 
     //! For Iteratorfacade
-    Reference elementAt(DifferenceType n) const
+    Reference elementAt(DifferenceType /*n*/) const
     {
       static_assert(AlwaysFalse<Grid>::value, "Subscription not "
                     "implemented for random-access SeedEntityIterator");

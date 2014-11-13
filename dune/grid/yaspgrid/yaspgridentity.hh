@@ -60,7 +60,7 @@ namespace Dune {
 
     typedef typename GridImp::YGridLevelIterator YGLI;
     typedef typename SubYGrid<dim,ctype>::TransformingSubIterator TSI;
-    YaspEntity (const GridImp* yg, const YGLI& g, const TSI& it)
+    YaspEntity (const GridImp* /*yg*/, const YGLI& /*g*/, const TSI& /*it*/)
     {
       DUNE_THROW(GridError, "YaspEntity not implemented");
     }
@@ -363,7 +363,7 @@ namespace Dune {
     }
 
     //! Returns iterator to one past the last son
-    HierarchicIterator hend (int maxlevel) const
+    HierarchicIterator hend (int /*maxlevel*/) const
     {
       return YaspHierarchicIterator<GridImp>(_yg,_g,_it,_g->level());
     }

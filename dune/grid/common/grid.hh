@@ -1217,7 +1217,7 @@ namespace Dune {
     /** dummy communicate, doing nothing  */
     template<class DataHandleImp, class DataTypeImp>
     void communicate (CommDataHandleIF<DataHandleImp,DataTypeImp> & /*data*/,
-                      InterfaceType iftype, CommunicationDirection /*dir*/, int /*level*/) const
+                      InterfaceType /*iftype*/, CommunicationDirection /*dir*/, int /*level*/) const
     {}
 
     /** dummy communicate, doing nothing  */
