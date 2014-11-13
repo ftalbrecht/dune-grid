@@ -70,7 +70,7 @@ namespace Dune
      *
      * The datamode is always nonconforming.
      */
-    explicit SubsamplingVTKWriter (const GridView &gridView,
+    SubsamplingVTKWriter (const GridView &gridView,
                                    int level_, bool coerceToSimplex_ = false)
       : Base(gridView, VTK::nonconforming)
         , level(level_), coerceToSimplex(coerceToSimplex_)

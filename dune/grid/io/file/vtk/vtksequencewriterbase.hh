@@ -31,7 +31,7 @@ namespace Dune {
     std::vector<double> timesteps_;
     std::string name_,path_,extendpath_;
   public:
-    explicit VTKSequenceWriterBase( const std::string& name,
+    VTKSequenceWriterBase( const std::string& name,
                                     const std::string& path,
                                     const std::string& extendpath)
       : name_(name), path_(path),

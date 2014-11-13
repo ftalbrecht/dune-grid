@@ -92,7 +92,7 @@ namespace Dune
       EntitySeed ( )
       {}
 
-      explicit EntitySeed ( const HostElementSeed &hostElementSeed, unsigned int subEntity )
+      EntitySeed ( const HostElementSeed &hostElementSeed, unsigned int subEntity )
         : hostElementSeed_( hostElementSeed ),
           subEntity_( subEntity )
       {}
