@@ -43,6 +43,7 @@ find_path(GRAPE_INCLUDE_DIR grape.h
 
 # check header usability
 include(CMakePushCheckState)
+include(CheckIncludeFiles)
 cmake_push_check_state()
 set(CMAKE_REQUIRED_DEFINITIONS "${CMAKE_REQUIRED_DEFINITIONS} -DENABLE_GRAPE")
 set(CMAKE_REQUIRED_INCLUDES ${CMAKE_REQUIRED_INCLUDES} ${OPENGL_INCLUDE_DIR} ${GRAPE_INCLUDE_DIR})
